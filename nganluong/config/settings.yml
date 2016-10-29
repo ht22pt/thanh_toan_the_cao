@@ -1,0 +1,36 @@
+func: "CardCharge"
+version: "2.0"
+merchant_id: "merchant_id"
+merchant_account: "merchant_account"
+merchant_password: "merchant_password"
+
+error_00: "Successful transaction"
+error_99: "Error, but undefined or without reason"
+error_01: "Error, IP address to access API of NganLuong.vn is refused"
+error_02: "Error, parameter sent from the merchant to NganLuong.vn is not correct ( wrong
+parameter name or missing parameter)"
+error_03: "Error, parameter sent from the merchant to NganLuong.vn is not correct ( wrong
+parameter name or missing parameter)"
+error_04: "Error, checksum code is not correct (this error arises when communication code
+between merchant and NganLuong.vn is not correct or the order of params is not
+correct)"
+error_05: "Account that used to receive money does not exist."
+error_06: "Account that used to receive money is blocked or limited, impossible to accept
+transactions"
+error_07: "prepaid card has used already"
+error_08: "prepaid card is blocked"
+error_09: "out of date card"
+error_10: "unverified card"
+error_11: "Wrong format of prepaid card code"
+error_12: "Wrong serial number"
+error_13: "Wrong card code or serial number is not correct"
+error_14: "Prepaid card does not exist"
+error_15: "Prepaid card can not use"
+error_16: "Number of entering card code (enter wrong card code) is beyond the limits"
+error_17: "Telco system is error, card is not deducted"
+error_18: "Telco system is error or overloaded, maybe card is not deducted, should be work with
+NganLuong.vn to resolve."
+error_19: "Connection from NganLuong.vn to Telco system is error, card is not deducted ( for ex:
+wrong connection para, this error is not related to merchant)"
+error_20: "Successful connection to Telco, card is deducted but not yet adding money on
+NganLuong.vn"

@@ -1,0 +1,57 @@
+<p><b class="text-danger">Input</b></p>
+
+<table class="table table-bordered">
+  <tr>
+    <td>func</td>
+    <td>version</td>
+    <td>merchant_id</td>
+    <td>merchant_account</td>
+    <td>merchant_password</td>
+    <td>pin_card</td>
+    <td>serial_card</td>
+    <td>type_card</td>
+    <td>ref_code</td>
+  </tr>
+
+  <tr>
+    <td><%= @pay_request.func %></td>
+    <td><%= @pay_request.version %></td>
+    <td><%= @pay_request.merchant_id %></td>
+    <td><%= @pay_request.merchant_account %></td>
+    <td><%= @pay_request.merchant_password %></td>
+    <td><%= @pay_request.pin_card %></td>
+    <td><%= @pay_request.serial_card %></td>
+    <td><%= @pay_request.type_card %></td>
+    <td><%= @pay_request.ref_code %></td>
+  </tr>
+</table>
+
+<p><b class="text-danger">Output</b></p>
+
+<table class="table table-bordered">
+  <tr>
+    <td>error_code</td>
+    <td>merchant_id</td>
+    <td>merchant_account</td>
+    <td>pin_card</td>
+    <td>serial_card</td>
+    <td>type_card</td>
+    <td>ref_code</td>
+    <td>card_amount</td>
+    <td>transaction_amount</td>
+    <td>transaction_id</td>
+  </tr>
+
+  <tr>
+    <td><%= @res[0] %></td>
+    <td><%= @res[1] %></td>
+    <td><%= @res[2] %></td>
+    <td><%= @res[3] %></td>
+    <td><%= @res[4] %></td>
+    <td><%= @res[5] %></td>
+    <td><%= @res[6] %></td>
+    <td><%= @res[10] %></td>
+    <td><%= @res[11] %></td>
+    <td><%= @res[12] %></td>
+  </tr>
+</table>

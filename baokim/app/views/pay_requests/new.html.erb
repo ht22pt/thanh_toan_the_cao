@@ -1,0 +1,24 @@
+<%= form_for @pay_request do |f| %>
+  <div class="form-group">
+    <%= f.label :seri_field %>
+    <%= f.text_field :seri_field, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :pin_field %>
+    <%= f.text_field :pin_field, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :card_id %>
+    <select name="pay_request[card_id]" id="pay_request_card_id" class="form-control">
+      <option value="MOBI">MobiFone</option>
+      <option value="VINA">VinaPhone</option>
+      <option value="VIETEL">Viettel</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit %>
+  </div>
+<% end %>

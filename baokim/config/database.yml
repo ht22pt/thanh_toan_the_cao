@@ -1,0 +1,18 @@
+default: &default
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+  username: root
+  password: root
+
+development:
+  <<: *default
+  database: baokim
+
+test:
+  <<: *default
+  database: baokim_test
+
+production:
+  <<: *default
+  database: baokim

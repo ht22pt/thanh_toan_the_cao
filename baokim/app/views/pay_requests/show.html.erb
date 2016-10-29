@@ -1,0 +1,31 @@
+<p><b class="text-danger">Input</b></p>
+
+<table class="table table-bordered">
+  <tr>
+    <td>merchant_id</td>
+    <td>api_username</td>
+    <td>api_password</td>
+    <td>transaction_id</td>
+    <td>card_id</td>
+    <td>pin_field</td>
+    <td>seri_field</td>
+    <td>algo_mode</td>
+    <td>data_sign</td>
+  </tr>
+
+  <tr>
+    <td><%= @pay_request.merchant_id %></td>
+    <td><%= @pay_request.api_username %></td>
+    <td><%= @pay_request.api_password %></td>
+    <td><%= @pay_request.transaction_id %></td>
+    <td><%= @pay_request.card_id %></td>
+    <td><%= @pay_request.pin_field %></td>
+    <td><%= @pay_request.seri_field %></td>
+    <td><%= @pay_request.algo_mode %></td>
+    <td><%= @pay_request.data_sign %></td>
+  </tr>
+</table>
+
+<p><b class="text-danger">Output</b></p>
+
+<%= @res %>
